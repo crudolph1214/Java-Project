@@ -1,0 +1,69 @@
+    // BEGIN IMPORT METHODS
+    /**
+     * Extracts the reservation's customer name from the reservation record.
+     * 
+     * @param record
+     * @return String - the customer name.
+     */
+    private String getReservationName( String record )
+    {
+        return record.substring( 5 );
+    }
+
+    /**
+     * Extracts the reservation type from a reservation record.
+     * 
+     * @param record
+     * @return char - the character reservation type code.
+     */
+    private char getReservationType( String record )
+    {
+        return record.charAt( 0 );
+    }
+
+    /**
+     * Extracts the 4-character flight number from a reservation number.
+     * 
+     * @param record
+     * @return String - the flight number.
+     */
+    private String getReservationFlightNumber( String record )
+    {
+        return record.substring( 1, 5 );
+    }
+
+    /**
+     * Extracts the 4-character flight number from a plane record.
+     * 
+     * @param record
+     * @return String - the flight number.
+     */
+    private String getPlaneFlightNumber( String record )
+    {
+        return record.substring( 0, 4 );
+    }
+
+    /**
+     * Extracts the plane departure airport 3-character code from the plane
+     * record.
+     * 
+     * @param record
+     * @return String - the departure airport code.
+     */
+    private String getPlaneDepartureAirport( String record )
+    {
+        return record.substring( 4, 7 );
+    }
+
+    /**
+     * Extracts the plane arrival airport 3-character code from the plane
+     * record.
+     * 
+     * @param record
+     * @return String - the arrival airport code.
+     */
+    private String getPlaneArrivalAirport( String record )
+    {
+        return record.substring( 7, 10 );
+    }
+    // END IMPORT METHODS
